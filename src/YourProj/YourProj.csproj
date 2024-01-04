@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<RootNamespace>YourProj</RootNamespace>
+		<AssemblyName>YourProj</AssemblyName>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">True</GeneratePackageOnBuild>
+		<RepositoryUrl>https://github.com/inContact/YourGitHubRepo</RepositoryUrl>
+		<PackageId>Nice.CxOne.inContact.YourProj</PackageId>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<InternalsVisibleTo Include="YourProj.Tests" />
+	</ItemGroup>
+
+</Project>
